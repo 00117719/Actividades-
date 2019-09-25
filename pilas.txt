@@ -1,0 +1,65 @@
+
+Algoritmo 1:
+1. Hacer uma estructura para la pila
+2. Inicializar la pila
+3. Hacer un push para guardar los elementos de la pila
+4. Hacer un pop para eliminar los dos elementos de arriba de la pila
+5. Obtener el segundo elemento de la pila.
+
+
+#include <iostream>
+using namespace std;
+
+struct Tpila{
+	float elements[100];
+	int top;
+};
+typedef struct Tpila Pila;
+
+void initialize(Pila *s){
+	s->top = -1;
+}
+
+void push(Pila *s, float e){
+	if(s->top < 99){
+		(s->top)++;
+		s->elements[s->top] = e;
+	}
+}
+
+void pop(Pila *s, float *e){
+	if(s->top >= 0){
+		*e = s->elements[s->top];
+		(s->top)--;
+	}
+}
+
+Algoritmo 2:
+1. Hacer una estructura para la pila
+2. Inicializar la pila
+3. Hacer un push para guardar los elementos de la pila
+4. Hacer un pop para eliminar los elementos y obtener el segundo elemento
+5. Hacer un empty para dejar la pila intacta
+
+Pila unaPila;
+	initialize(&unaPila);
+	
+	if(empty(&unaPila))
+		cout << "Esta vacia" << endl;
+
+
+
+
+
+
+
+
+
+Algoritmo 3:
+1. Hacer una estructura para la pila
+2. Inicializar la pila
+3. Hacer un pop para eliminar los elementos de la pila y solo obtener el ultimo elemento de la pila
+
+
+
+
