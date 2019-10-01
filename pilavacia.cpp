@@ -21,7 +21,7 @@ void push(Pila *s, float e){
 	}
 }
 
-void pop(Pila *s, float *e){
+float pop(Pila *s, float *e){
 	if(s->top >= 0){
 		*e = s->elements[s->top];
 		(s->top)--;
