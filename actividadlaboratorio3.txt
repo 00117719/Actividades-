@@ -1,0 +1,21 @@
+Nombre: Alberto Jose Marroquin Mendoza
+Carnet: 00117719
+
+Ejercicio  2.3.3.
+Transformar de postfijo a infijo
+
+a. AB+C-
+(A+B)-C
+
+b. ABC+-
+A+(B-C)
+
+c. AB-C+DEF-+$
+A-(C+B)DEF-+$
+A-(C+B)D-(E+F)$
+
+d. ABCDE-+$*EF*-
+A-(B+C)DE-$*EF*-
+A-(B+C)-(D$E)*EF*-
+A-(B+C)-(D$E)-(E*F)*
+
